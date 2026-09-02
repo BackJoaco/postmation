@@ -1,0 +1,300 @@
+{
+  "info": {
+    "name": "Backend API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000"
+    }
+  ],
+  "item": [
+    {
+      "name": "health",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/health/"
+          }
+        },
+        {
+          "name": "GET /como-estas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/health/como-estas"
+          }
+        }
+      ]
+    },
+    {
+      "name": "log",
+      "item": [
+        {
+          "name": "GET /prod-list",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/log/prod-list"
+          }
+        },
+        {
+          "name": "GET /prod/file/:filename",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/log/prod/file/:filename"
+          }
+        },
+        {
+          "name": "GET /prod/download/:filename",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/log/prod/download/:filename"
+          }
+        }
+      ]
+    },
+    {
+      "name": "permiso",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/permiso/"
+          }
+        },
+        {
+          "name": "GET /:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/permiso/:id"
+          }
+        },
+        {
+          "name": "POST /nuevo",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/permiso/nuevo"
+          }
+        },
+        {
+          "name": "PUT /restaurar/:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/permiso/restaurar/:id"
+          }
+        },
+        {
+          "name": "PUT /:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/permiso/:id"
+          }
+        },
+        {
+          "name": "DELETE /:id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/permiso/:id"
+          }
+        }
+      ]
+    },
+    {
+      "name": "rol",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/rol/"
+          }
+        },
+        {
+          "name": "GET /:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/rol/:id"
+          }
+        },
+        {
+          "name": "POST /nuevo",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/rol/nuevo"
+          }
+        },
+        {
+          "name": "PUT /restaurar/:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/rol/restaurar/:id"
+          }
+        },
+        {
+          "name": "PUT /:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/rol/:id"
+          }
+        },
+        {
+          "name": "DELETE /:id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/rol/:id"
+          }
+        }
+      ]
+    },
+    {
+      "name": "session",
+      "item": [
+        {
+          "name": "POST /login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/session/login"
+          }
+        },
+        {
+          "name": "POST /logout",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/session/logout"
+          }
+        },
+        {
+          "name": "POST /register",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/session/register"
+          }
+        }
+      ]
+    },
+    {
+      "name": "usuario",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/usuario/"
+          }
+        },
+        {
+          "name": "GET /:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/usuario/:id"
+          }
+        },
+        {
+          "name": "POST /nuevo",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/usuario/nuevo"
+          }
+        },
+        {
+          "name": "POST /agregar-permisos/:usuarioObjetivoId",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/usuario/agregar-permisos/:usuarioObjetivoId"
+          }
+        },
+        {
+          "name": "DELETE /remover-permisos/:usuarioObjetivoId",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/usuario/remover-permisos/:usuarioObjetivoId"
+          }
+        },
+        {
+          "name": "PUT /restaurar/:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/usuario/restaurar/:id"
+          }
+        },
+        {
+          "name": "PUT /:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/usuario/:id"
+          }
+        },
+        {
+          "name": "DELETE /:id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/usuario/:id"
+          }
+        },
+        {
+          "name": "POST /verificar-email",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/usuario/verificar-email"
+          }
+        },
+        {
+          "name": "POST /reenviar-verificacion",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/usuario/reenviar-verificacion"
+          }
+        },
+        {
+          "name": "POST /recuperar-contrasenia",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/usuario/recuperar-contrasenia"
+          }
+        },
+        {
+          "name": "POST /cambiar-contrasenia",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/usuario/cambiar-contrasenia"
+          }
+        }
+      ]
+    }
+  ]
+}
