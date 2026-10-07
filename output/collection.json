@@ -6,10 +6,434 @@
   "variable": [
     {
       "key": "baseUrl",
-      "value": "http://localhost:3000"
+      "value": "http://localhost:8086"
     }
   ],
   "item": [
+    {
+      "name": "anulada",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/anulada/"
+          }
+        },
+        {
+          "name": "GET /:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/anulada/:id"
+          }
+        },
+        {
+          "name": "POST /nuevo",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/anulada/nuevo"
+          }
+        },
+        {
+          "name": "PUT /restaurar/:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/anulada/restaurar/:id"
+          }
+        },
+        {
+          "name": "PUT /:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/anulada/:id"
+          }
+        },
+        {
+          "name": "DELETE /:id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/anulada/:id"
+          }
+        }
+      ]
+    },
+    {
+      "name": "cliente",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/cliente/"
+          }
+        },
+        {
+          "name": "GET /:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/cliente/:id"
+          }
+        },
+        {
+          "name": "POST /nuevo",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/cliente/nuevo"
+          }
+        },
+        {
+          "name": "PUT /restaurar/:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/cliente/restaurar/:id"
+          }
+        },
+        {
+          "name": "PUT /:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/cliente/:id"
+          }
+        },
+        {
+          "name": "DELETE /:id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/cliente/:id"
+          }
+        }
+      ]
+    },
+    {
+      "name": "configuracionempresa",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/configuracionempresa/"
+          }
+        },
+        {
+          "name": "GET /:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/configuracionempresa/:id"
+          }
+        },
+        {
+          "name": "POST /nuevo",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/configuracionempresa/nuevo"
+          }
+        },
+        {
+          "name": "PUT /restaurar/:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/configuracionempresa/restaurar/:id"
+          }
+        },
+        {
+          "name": "PUT /:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/configuracionempresa/:id"
+          }
+        },
+        {
+          "name": "DELETE /:id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/configuracionempresa/:id"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ddjj",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/ddjj/"
+          }
+        },
+        {
+          "name": "GET /:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/ddjj/:id"
+          }
+        },
+        {
+          "name": "POST /nuevo",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/ddjj/nuevo"
+          }
+        },
+        {
+          "name": "PUT /restaurar/:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/ddjj/restaurar/:id"
+          }
+        },
+        {
+          "name": "PUT /:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/ddjj/:id"
+          }
+        },
+        {
+          "name": "DELETE /:id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/ddjj/:id"
+          }
+        }
+      ]
+    },
+    {
+      "name": "defecto",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/defecto/"
+          }
+        },
+        {
+          "name": "GET /:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/defecto/:id"
+          }
+        },
+        {
+          "name": "POST /nuevo",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/defecto/nuevo"
+          }
+        },
+        {
+          "name": "PUT /restaurar/:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/defecto/restaurar/:id"
+          }
+        },
+        {
+          "name": "PUT /:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/defecto/:id"
+          }
+        },
+        {
+          "name": "DELETE /:id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/defecto/:id"
+          }
+        }
+      ]
+    },
+    {
+      "name": "deposito",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/deposito/"
+          }
+        },
+        {
+          "name": "GET /:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/deposito/:id"
+          }
+        },
+        {
+          "name": "POST /nuevo",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/deposito/nuevo"
+          }
+        },
+        {
+          "name": "PUT /restaurar/:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/deposito/restaurar/:id"
+          }
+        },
+        {
+          "name": "PUT /:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/deposito/:id"
+          }
+        },
+        {
+          "name": "DELETE /:id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/deposito/:id"
+          }
+        }
+      ]
+    },
+    {
+      "name": "empresa",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/empresa/"
+          }
+        },
+        {
+          "name": "GET /:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/empresa/:id"
+          }
+        },
+        {
+          "name": "POST /nuevo",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/empresa/nuevo"
+          }
+        },
+        {
+          "name": "PUT /restaurar/:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/empresa/restaurar/:id"
+          }
+        },
+        {
+          "name": "PUT /:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/empresa/:id"
+          }
+        },
+        {
+          "name": "DELETE /:id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/empresa/:id"
+          }
+        }
+      ]
+    },
+    {
+      "name": "extracto",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/extracto/"
+          }
+        },
+        {
+          "name": "GET /:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/extracto/:id"
+          }
+        },
+        {
+          "name": "POST /nuevo",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/extracto/nuevo"
+          }
+        },
+        {
+          "name": "PUT /restaurar/:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/extracto/restaurar/:id"
+          }
+        },
+        {
+          "name": "PUT /:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/extracto/:id"
+          }
+        },
+        {
+          "name": "DELETE /:id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/extracto/:id"
+          }
+        }
+      ]
+    },
     {
       "name": "health",
       "item": [
@@ -27,6 +451,112 @@
             "method": "GET",
             "header": [],
             "url": "{{baseUrl}}/api/health/como-estas"
+          }
+        }
+      ]
+    },
+    {
+      "name": "inspeccion",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/inspeccion/"
+          }
+        },
+        {
+          "name": "GET /:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/inspeccion/:id"
+          }
+        },
+        {
+          "name": "POST /nuevo",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/inspeccion/nuevo"
+          }
+        },
+        {
+          "name": "PUT /restaurar/:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/inspeccion/restaurar/:id"
+          }
+        },
+        {
+          "name": "PUT /:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/inspeccion/:id"
+          }
+        },
+        {
+          "name": "DELETE /:id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/inspeccion/:id"
+          }
+        }
+      ]
+    },
+    {
+      "name": "layout",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/layout/"
+          }
+        },
+        {
+          "name": "GET /:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/layout/:id"
+          }
+        },
+        {
+          "name": "POST /nuevo",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/layout/nuevo"
+          }
+        },
+        {
+          "name": "PUT /restaurar/:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/layout/restaurar/:id"
+          }
+        },
+        {
+          "name": "PUT /:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/layout/:id"
+          }
+        },
+        {
+          "name": "DELETE /:id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/layout/:id"
           }
         }
       ]
@@ -109,6 +639,59 @@
             "method": "DELETE",
             "header": [],
             "url": "{{baseUrl}}/api/permiso/:id"
+          }
+        }
+      ]
+    },
+    {
+      "name": "recambio",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/recambio/"
+          }
+        },
+        {
+          "name": "GET /:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/recambio/:id"
+          }
+        },
+        {
+          "name": "POST /nuevo",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/recambio/nuevo"
+          }
+        },
+        {
+          "name": "PUT /restaurar/:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/recambio/restaurar/:id"
+          }
+        },
+        {
+          "name": "PUT /:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/recambio/:id"
+          }
+        },
+        {
+          "name": "DELETE /:id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/recambio/:id"
           }
         }
       ]
@@ -292,6 +875,112 @@
             "method": "POST",
             "header": [],
             "url": "{{baseUrl}}/api/usuario/cambiar-contrasenia"
+          }
+        }
+      ]
+    },
+    {
+      "name": "vehiculo",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/vehiculo/"
+          }
+        },
+        {
+          "name": "GET /:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/vehiculo/:id"
+          }
+        },
+        {
+          "name": "POST /nuevo",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/vehiculo/nuevo"
+          }
+        },
+        {
+          "name": "PUT /restaurar/:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/vehiculo/restaurar/:id"
+          }
+        },
+        {
+          "name": "PUT /:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/vehiculo/:id"
+          }
+        },
+        {
+          "name": "DELETE /:id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/vehiculo/:id"
+          }
+        }
+      ]
+    },
+    {
+      "name": "zona",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/zona/"
+          }
+        },
+        {
+          "name": "GET /:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/zona/:id"
+          }
+        },
+        {
+          "name": "POST /nuevo",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/zona/nuevo"
+          }
+        },
+        {
+          "name": "PUT /restaurar/:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/zona/restaurar/:id"
+          }
+        },
+        {
+          "name": "PUT /:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/zona/:id"
+          }
+        },
+        {
+          "name": "DELETE /:id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/zona/:id"
           }
         }
       ]

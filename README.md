@@ -72,7 +72,53 @@ Actualmente el proyecto busca mantener la mayor cantidad posible de funcionalida
 Ejecutar Postmation indicando la ubicación del backend:
 
 ```bash
-node src/index.js <ruta-al-backend>
+node src/index.js <ruta-al-backend> [opciones]
+```
+
+Por defecto:
+* La URL base generada es `http://localhost:8086`.
+* El nombre de la colección y del archivo generado toman automáticamente el **nombre del backend** (a partir de su `package.json` o del nombre de la carpeta).
+
+### Opciones
+
+| Parámetro | Alias | Descripción | Por defecto |
+|---|---|---|---|
+| `--url <url>` | `-u`, `--host` | URL o host base personalizado | `localhost` |
+| `--port <puerto>` | `-p` | Puerto del servidor | `8086` |
+| `--name <nombre>` | `-n` | Nombre de la colección | Nombre del backend |
+| `--output <archivo>` | `-o` | Ruta del archivo de salida | `output/<nombre-backend>.json` |
+| `--help` | `-h` | Muestra la ayuda de uso | |
+
+### Ejemplos
+
+Uso por defecto (`http://localhost:8086` y nombre del backend):
+
+```bash
+node src/index.js ../mi-backend
+```
+
+Especificar un puerto diferente:
+
+```bash
+node src/index.js ../mi-backend -p 8087
+```
+
+Especificar una URL específica:
+
+```bash
+node src/index.js ../mi-backend --url https://api.midominio.com
+```
+
+Especificar una URL y un puerto específicos:
+
+```bash
+node src/index.js ../mi-backend -u http://192.168.1.50 -p 8087
+```
+
+Especificar un nombre personalizado:
+
+```bash
+node src/index.js ../mi-backend -n "Mi API Backend"
 ```
 
 Postmation buscará las rutas en:
@@ -84,7 +130,7 @@ Postmation buscará las rutas en:
 y generará:
 
 ```text
-output/collection.json
+output/<nombre-del-backend>.json
 ```
 
 ## Ejemplo
@@ -108,10 +154,10 @@ Postmation generará una colección con:
 
 ```text
 usuario
-├── GET /
-├── GET /:id
-├── POST /nuevo
-└── DELETE /:id
+├── /
+├── /:id
+├── /nuevo
+└── /:id
 ```
 
 Las rutas completas serán:
@@ -125,18 +171,11 @@ DELETE {{baseUrl}}/api/usuario/:id
 
 ## Configuración de las requests
 
-Postmation se encarga únicamente de generar la estructura básica de cada request.
+Postmation genera la estructura básica para cada request:
 
-La configuración específica queda a cargo del usuario:
-
-* Headers
-* Autenticación
-* JWT
-* Body
-* Query parameters
-* Variables adicionales
-
-Esto permite utilizar Postmation con diferentes APIs sin asumir cómo está configurada su autenticación o qué datos requiere cada endpoint.
+* **Nombre de la request:** Corresponde a la ruta (ej. `/`, `/:id`, `/nuevo`), sin prefijo de método HTTP.
+* **Body:** En todas las requests excepto `GET` (`POST`, `PUT`, `PATCH`, `DELETE`), se configura automáticamente el body en formato `raw` tipo `JSON`.
+* **Headers y Autenticación:** Quedan a cargo del usuario para configuraciones específicas (JWT, headers personalizados, query params, etc.).
 
 ## Estructura del proyecto
 
@@ -145,7 +184,7 @@ postmation/
 ├── src/
 │   └── index.js
 ├── output/
-│   └── collection.json
+│   └── <nombre-backend>.json
 ├── package.json
 └── README.md
 ```
@@ -159,7 +198,7 @@ postmation/
 * [x] Agrupar requests por recurso
 * [ ] Agregar soporte para más estructuras de routers
 * [ ] Mejorar el análisis de rutas complejas
-* [ ] Permitir configurar la URL base desde la línea de comandos
+* [x] Permitir configurar la URL base desde la línea de comandos
 * [ ] Agregar opciones de configuración mediante archivo
 * [ ] Agregar tests automatizados
 * [ ] Mejorar mensajes y manejo de errores
